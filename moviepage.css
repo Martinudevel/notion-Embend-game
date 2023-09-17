@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "myfont";
+    background-color: #CCCCFF;
+    color: #2C3539;
+}
+@font-face{
+    font-family: "myfont";
+    src: url(textures/Questrial-Regular.otf);
+}
+#continer{
+    width: 40%;
+    height: 40%;
+    border: 3px solid violet;
+}
+#title{
+    text-align: left;
+    margin-left: 200px;
+    font-size: 30px;
+    color: #2C3539;
+    background-color: #CCCCFF;
+}
+#booktitle{
+    position: relative;
+    font-style: italic;
+    top: -160px;
+    left: 120px;
+    width: 300px;
+
+}
+#bookauthor{
+    position: relative;
+    top: -165px;
+    left: 120px;
+    width: 300px;
+}
+#bookdescription{
+    position: relative;
+    top: -170px;
+    left: 120px;
+    width: 300px;
+}
+#bookdescriptionbar{
+    position: relative;
+    top: -170px;
+    left: 120px;
+    width: 300px;
+    height: 20px;
+    border: 3px solid violet;
+}
+#booktitle2{
+    position: relative;
+    font-style: italic;
+    top: -130px;
+    left: 155px;
+    width: 300px;
+
+}
+#bookdescription2{
+    position: relative;
+    top: -140px;
+    left: 155px;
+    width: 300px;
+}
+#heart1{
+    position: relative;
+    top: -340px;
+    width: 50px;
+    height: 50px;
+}
+#heart1::before, #heart1::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #E6E6FA;
+ }
+ #heart1::before{
+    left: -25px;
+ }
+ #heart1::after{
+    top: -25px;
+ }
+
+#heart2{
+    position: relative;
+    transform: rotate(15deg);
+    top: -490px;
+    left: 200px;
+    width: 30px;
+    height: 30px;
+}
+#heart2::before, #heart2::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #E6E6FA;
+ }
+ #heart2::before{
+    left: -15px;
+ }
+ #heart2::after{
+    top: -15px;
+ }
+#heart3{
+    position: relative;
+    transform: rotate(15deg);
+    top: -340px;
+    left: -220px;
+    width: 60px;
+    height: 60px;
+}
+#heart3::before, #heart3::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #E6E6FA;
+ }
+ #heart3::before{
+    left: -30px;
+ }
+ #heart3::after{
+    top: -30px;
+ }
+.audiobutton{
+    position: relative;
+    top: -100px;
+    left: -270px;
+    border-radius: 100%;
+    border: 3px solid violet;
+}
+.heart{
+    width: 40px;
+    height: 40px;
+    transform: rotate(86deg);
+    transform-origin: center;
+    position: relative;
+    background: #E6E6FA;
+    margin: 100px auto;
+    top:-400px;
+    left: 250px;
+ }
+ .heart::before, .heart::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #E6E6FA;
+ }
+ .heart::before{
+    left: -20px;
+ }
+ .heart::after{
+    top: -20px;
+ }
+.bandaj{
+    width: 120px;
+    height: 40px;
+    background-color: #FAFAD2;
+    transform: rotate(46deg);
+    position: relative;
+    top: -240px;
+    right: -420px;
+
+}
+#image2{
+    width: 140px;
+    height: 90px;
+    border: 3px solid violet;
+}
+#image{
+    width: 90px;
+    height: 140px;
+    border: 3px solid violet;
+}
+.bandaj1{
+    width: 100px;
+    height: 40px;
+    background-color: #FAFAD2;
+    transform: rotate(46deg);
+    position: relative;
+    top: -20px;
+    right: 40px;
+
+}
+.games{
+    margin: 10 10 10 10;
+    
+}
+.game1{
+    margin: 10 10 10 10;
+    background-color: #FFEFD5;
+}
+.game2{
+    margin: 20 10 10 10;
+    background-color: #FFEFD5;
+    position: relative;
+    
+    
+}
+.game3{
+    margin: 20 10 10 10;
+    background-color: #FFEFD5;
+    position: relative;
+    
+    
+}
+.game4{
+    margin: 20 10 10 10;
+    background-color: #FFEFD5;
+    position: relative;
+    
+    
+}
+
+.books{
+    position: relative;
+    top: -1280px;
+    left: 620px;
+
+}
+.book1{
+    margin: 10 10 10 10;
+    background-color: #FAFAD2;
+}

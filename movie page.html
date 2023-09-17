@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="moviepage.css">
+        <title>
+        books and games site
+    </title>
+    </head>
+    <body>
+        <div class="games">
+            <h1 id="title">jocuri </h1>
+            <div class="game1" id="continer">
+                <img class=game1 id="image" src="textures/th-3217627142.jpg" alt="Slime rancher">
+                <h2 class="game1" id="booktitle">slime rancher</h2>
+                <p class="game1" id="bookdescription">SLLLLLLLIME SLIIIIIIIIME</p>
+                <div class="bandaj"></div>
+                <div class="bandaj1"></div>
+            </div>
+            <div class="game2" id="continer">
+                <img class=game2 id="image2" src="textures/ss_619c729f44cd0a3c9bb1bae0602c608993b68747.jpg" alt="Starbound">
+                <h2 class="game2" id="booktitle2">Starbound</h2>
+                <p class="game2" id="bookdescription2">o intreaga aventura in creearea serverului ca dupa sa adorm</p>
+                <div class="heart" id="heart1"></div>
+                <div class="heart" id="heart2"></div>
+                <div class="heart" id="heart3"></div>
+            </div>
+            <div class="game3" id="continer">
+                <img class=game3 id="image2" src="textures/StarCraft+2+Wings+of+Liberty+reen_wallpapers_1440x900-1756933338.jpg" alt="StarCraft 2 Wings of Liberty">
+                <h2 class="game3" id="booktitle2">StarCraft 2 Wings of Liberty</h2>
+                <p class="game3" id="bookdescription2">Joc favorit</p>
+                <div class="heart" id="heart1"></div>
+                <div class="heart" id="heart2"></div>
+                <div class="heart" id="heart3"></div>
+            </div>
+            <div class="game4" id="continer">
+                    <img class=game4 id="image2" src="textures/maxresdefault-607299633.jpg" alt="ripoff Lol">
+                    <h2 class="game4" id="booktitle2">Ripoff Lol</h2>
+                    <p class="game4" id="bookdescription2">LooooooooooooooooooooooooooL Looooooooooool</p>
+                    <div class="heart" id="heart1"></div>
+                    <div class="heart" id="heart2"></div>
+                    <div class="heart" id="heart3"></div>
+                </div>
+            
+        <div class="books">
+            <h1 id="title">carti</h1>
+            <div class="book1" id="continer">
+                <img class="book1" id="image" src="textures/9789734648979-2707864-4219631595.jpg" alt="carte">
+                <h2 class="book1" id="booktitle" >Vulpea albastra</h2>
+                <h3 class="book1" id="bookauthor">Sjon</h3>
+                <p class="book1" id="bookdescription">carte</p>
+                <input type="text" id="bookdescriptionbar" placeholder="descriere">
+                <button onclick="playAudio()" class="audiobutton">▶️</button>
+                <button onclick="pauseAudio()" class="audiobutton">⏹️</button>
+                <div class="heart"></div>
+
+            </div>
+        </div>
+        
+        
+    </body>
+    <audio id="myAudio">
+        <source src="song/we live we love we lie.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        var bookdescriptionbar = document.getElementById("bookdescriptionbar");
+        var bookdescriptionbutton = document.getElementById("bookdescriptionbutton");
+        var x = document.getElementById("myAudio");
+
+    function playAudio() {
+    x.play();
+    }
+
+    function pauseAudio() {
+    x.pause();
+    } 
+
+        bookdescriptionbar.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("bookdescription").innerHTML = bookdescriptionbar.value;
+            }
+        });
+        bookdescriptionbutton.addEventListener("click", function(event) {
+           
+        });
+    </script>
+</html>
